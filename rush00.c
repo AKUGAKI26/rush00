@@ -40,7 +40,7 @@ void middle_rs(int i){
 void rush(int i,int j){
     if(i<=0 || j<=0 || i>=2147483647 || j>=2147483647 )
     {
-    write(1,"ERROR",5);
+    write(2,"ERROR",5);
     return ;
     }
     rows(i);
@@ -49,7 +49,7 @@ void rush(int i,int j){
         middle_rs(i);
         len--;
     }
-    if(j>2)
+    if(j>=2)
         rows(i);
 }
 
